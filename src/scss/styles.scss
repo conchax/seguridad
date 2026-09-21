@@ -1,0 +1,41 @@
+// 1. CONFIGURACIÓN E INTERVENCIONES BÁSICAS
+@import "bootstrap/scss/functions";
+
+// 2. TUS PERSONALIZACIONES (Variables y banderas de optimización)
+$primary: #198754;
+
+$enable-alerts: false;
+$enable-accordion: false;
+$enable-modals: false;
+$enable-toasts: false;
+$enable-popovers: false;
+$enable-tooltips: false;
+$enable-carousels: false;
+
+// 3. ARCHIVOS NÚCLEO DE BOOTSTRAP (Requeridos para el motor)
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/variables-dark";
+@import "bootstrap/scss/maps";
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/root";
+
+// 4. COMPONENTES DEL SISTEMA (Estructura base)
+@import "bootstrap/scss/utilities";
+@import "bootstrap/scss/reboot";
+@import "bootstrap/scss/containers";
+@import "bootstrap/scss/grid";
+
+// 5. COMPONENTES VISUALES ESPECÍFICOS (Activa solo los que use tu HTML)
+@import "bootstrap/scss/buttons"; 
+@import "bootstrap/scss/card";    
+@import "bootstrap/scss/type";    
+
+// 6. UTILIDADES FINALES 
+@import "bootstrap/scss/utilities/api";
+
+// AÑADE ESTOS COMPONENTES PARA LAS NAV-TABS (Cambiados a @import):
+@import "bootstrap/scss/nav";         // Estilos base de la navegación (.nav, .nav-tabs)
+@import "bootstrap/scss/transitions";   // Permite el efecto de desvanecimiento (.fade, .show)
+
+// 7. MIS ESTILOS PERSONALIZADOS (Añádelo siempre al final del todo)
+@import "theme";

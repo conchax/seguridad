@@ -1056,7 +1056,9 @@ footer{
     min-height: 337px;
     padding: 60px 0; /* Padding de seguridad para pantallas pequeñas */
 }
-
+#servicios{
+  scroll-margin-top: 85px;
+}
 .btn-ser {
   background-color: #2f2f2f;
   color: #D5BB4F;

@@ -4,14 +4,14 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/png" href="src/img/ico.png">
         <title>Inicio | Seguridad privada CUSAEM </title>
         <link rel="preconnect" href="https://googleapis.com">
         <link rel="preconnect" href="https://gstatic.com" crossorigin>
-        <link href="https://googleapis.com/css2?family=Poppins:wght@800&family=Rubik:wght@300;400;500;700&display=swap"
-            rel="stylesheet">
-        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css'>
+        <link href="https://googleapis.com/css2?family=Inter:wght@100;400;700&family=Poppins:wght@800&display=swap" rel="stylesheet">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
             integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <link rel="stylesheet" href="src/css/style.css">
     </head>
     <body>
@@ -28,17 +28,17 @@
                         Servicios <span class="arrow">▾</span>
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Guardias de seguridad</a></li>
-                        <li><a class="dropdown-item" href="#">Vigilancia de CCTV</a></li>
-                        <li><a class="dropdown-item" href="#">Custodia de Transportes</a></li>
-                        <li><a class="dropdown-item" href="#">Monitoreo de Alarmas</a></li>
-                        <li><a class="dropdown-item" href="#">Seguridad Intramuros</a></li>
-                        <li><a class="dropdown-item" href="#">Adiestramiento y Formación</a></li>
+                        <li><a class="dropdown-item" href="guardias-de-seguridad.html">Guardias de seguridad</a></li>
+                        <li><a class="dropdown-item" href="vigilancia-de-cctv.html">Vigilancia de CCTV</a></li>
+                        <li><a class="dropdown-item" href="custodia-de-transportes.html">Custodia de Transportes</a></li>
+                        <li><a class="dropdown-item" href="monitoreo-de-alarmas.html">Monitoreo de Alarmas</a></li>
+                        <li><a class="dropdown-item" href="seguridad-intramuros.html">Seguridad Intramuros</a></li>
+                        <li><a class="dropdown-item" href="adiestramiento-y-formacion.html">Adiestramiento y Formación</a></li>
                     </ul>
                     </li>
                     <li class="nav-item"><a href="convocatorias.html" class="nav-link">Convocatorias</a></li>
-                    <li class="nav-item"><a type="button" data-bs-toggle="modal" data-bs-target="#mcontacto"
-                            class="nav-link">Contacto</a></li>
+                    <!-- <li class="nav-item"><a type="button" data-bs-toggle="modal" data-bs-target="#mcontacto"
+                            class="nav-link">Contacto</a></li> -->
                 </ul>
             </nav>
             <button class="nav-toggle" aria-label="toggle navigation">
@@ -60,17 +60,17 @@
                             Servicios <span class="arrow">▾</span>
                         </a>
                         <ul class="mobile-dropdown-menu">
-                            <li><a class="mobile-dropdown-item" href="#">Guardias de seguridad</a></li>
-                            <li><a class="mobile-dropdown-item" href="#">Vigilancia de CCTV</a></li>
-                            <li><a class="mobile-dropdown-item" href="#">Custodia de Transportes</a></li>
-                            <li><a class="mobile-dropdown-item" href="#">Monitoreo de Alarmas</a></li>
-                            <li><a class="mobile-dropdown-item" href="#">Seguridad Intramuros</a></li>
-                            <li><a class="mobile-dropdown-item" href="#">Adiestramiento y Formación</a></li>
+                            <li><a class="mobile-dropdown-item" href="guardias-de-seguridad.html">Guardias de seguridad</a></li>
+                            <li><a class="mobile-dropdown-item" href="vigilancia-de-cctv.html">Vigilancia de CCTV</a></li>
+                            <li><a class="mobile-dropdown-item" href="custodia-de-transportes.html">Custodia de Transportes</a></li>
+                            <li><a class="mobile-dropdown-item" href="monitoreo-de-alarmas.html">Monitoreo de Alarmas</a></li>
+                            <li><a class="mobile-dropdown-item" href="seguridad-intramuros.html">Seguridad Intramuros</a></li>
+                            <li><a class="mobile-dropdown-item" href="adiestramiento-y-formacion.html">Adiestramiento y Formación</a></li>
                         </ul>
                     </li>
 
                     <li class="mobile-nav-item"><a href="convocatorias.html" class="mobile-nav-link">Convocatorias</a></li>
-                    <li class="mobile-nav-item"><a type="button" data-bs-toggle="modal" data-bs-target="#mcontacto" class="mobile-nav-link">Contacto</a></li>
+                    <!-- <li class="mobile-nav-item"><a type="button" data-bs-toggle="modal" data-bs-target="#mcontacto" class="mobile-nav-link">Contacto</a></li> -->
                 </ul>
             </nav>
         </div>
@@ -88,10 +88,10 @@
         <section class="mt-5">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-7">
+                    <div class="col-md-7" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
                         <img src="src/img/s-nosotros.webp" alt="nosotros" class="img-fluid mb-4">
                     </div>
-                    <div class="col-md-5">
+                    <div class="col-md-5" data-aos="fade-left" >
                         <p>Ante los grandes retos que existen en materia de seguridad, resulta indispensable estar preparados para enfrentar las situaciones que se nos presenten. por ello es de vital importancia que su empresa esté equipada y preparada para hacer frente a la inseguridad y garantizar así la continuidad de su operación.</p>
                         <p>CUSAEM ofrece salvaguardar la integridad física y el patrimonio de los usuarios a través de servicios profesionales de seguridad integral con los niveles más altos de calidad y tecnología de clase mundial, privilegiando la disciplina, honestidad y lealtad.</p>
                         <p>En CUSAEM estamos altamente capacitados y comprometidos para brindarle la atención que usted se merece</p>
@@ -103,11 +103,11 @@
         <section class="mt-5">
             <div class="container">
                 <div class="row">
-                    <div class="col-12">
+                    <div class="col-12" data-aos="fade-down">
                         <h2 class="goldBG goldText text-center">Ventajas Competitivas</h2>
                     </div>
                 </div>
-                <div class="row justify-content-center my-4">
+                <div class="row justify-content-center my-4" data-aos="zoom-in">
                     <div class="col-md-3">                        
                         <div class="border-gold">
                             <svg width="60" height="60">
@@ -171,50 +171,71 @@
         <section class="my-5">
             <div class="container">
                 <div class="row">
-                    <div class="col-12">
+                    <div class="col-md-6" data-aos="fade-right">
                         <h2 class="goldBG goldText text-center">Nuestro compromiso</h2>
-                        <p class="text-center">Una de las prioridades de nuestra corporación es dotar al personal de los medios tanto físicos, técnicos, mecánicos y teóricos para el desempeño de un mejor servicio, esto redituará en buenos resultados y un desgaste menor tanto en lo físico como en lo mental del capital humano, factor considerado el principal causante de los errores y sus consecuencias son en perjuicio de la empresa.</p>
-                        <p class="text-center">Esto nos lleva a desarrollar dentro de nuestras propuestas de servicio un análisis de riesgo, del cual se desprenderá un plan de trabajo, así como las sugerencias necesarias para poder rodear al elemento de los sistemas y equipos necesarios, esto se desarrollará después de una reunión en una mesa de trabajo con las personas designadas por la empresa para tal efecto.</p>
+                        <p >Una de las prioridades de nuestra corporación es dotar al personal de los medios tanto físicos, técnicos, mecánicos y teóricos para el desempeño de un mejor servicio, esto redituará en buenos resultados y un desgaste menor tanto en lo físico como en lo mental del capital humano, factor considerado el principal causante de los errores y sus consecuencias son en perjuicio de la empresa.</p>
+                        <p >Esto nos lleva a desarrollar dentro de nuestras propuestas de servicio un análisis de riesgo, del cual se desprenderá un plan de trabajo, así como las sugerencias necesarias para poder rodear al elemento de los sistemas y equipos necesarios, esto se desarrollará después de una reunión en una mesa de trabajo con las personas designadas por la empresa para tal efecto.</p>
                     </div>
-                </div>
-                <div class="row mt-4">
-                    <div class="col-12">
-                        <h2 class="goldBG goldText text-center">Los objetivos de los elementos son:</h2>
-                        <p class="text-center">Dar una imagen de seguridad a través de su actitud responsable y el conocimiento preciso de sus funciones a fin de que se cumpla con el propósito.</p>
-                        <p class="text-center">Lo más importante del policía auxiliar es el prevenir los actos criminales, que afectan la vida y la tranquilidad de la sociedad.  Detectar riesgos en individuos sospechosos que atenten contra la seguridad de las personas e instalaciones, en caso de algún ilícito comunicarlo a las autoridades correspondientes y si este fuese una falta menor poner al infractor a disposición de la autoridad municipal pero sobre todo hacer del lugar que vigila un mejor lugar para vivir y trabajar.</p>
+                    <div class="col-md-6" data-aos="fade-left">
+                        <h2 class="goldBG goldText text-center">Los objetivos de los elementos son</h2>
+                        <p >Dar una imagen de seguridad a través de su actitud responsable y el conocimiento preciso de sus funciones a fin de que se cumpla con el propósito.</p>
+                        <p >Lo más importante del policía auxiliar es el prevenir los actos criminales, que afectan la vida y la tranquilidad de la sociedad.  Detectar riesgos en individuos sospechosos que atenten contra la seguridad de las personas e instalaciones, en caso de algún ilícito comunicarlo a las autoridades correspondientes y si este fuese una falta menor poner al infractor a disposición de la autoridad municipal pero sobre todo hacer del lugar que vigila un mejor lugar para vivir y trabajar.</p>
                     </div>
-                </div>
+                </div>                
             </div>
         </section> 
+        
         <footer class="footer">
-            <div class="container">
-                <div class="row justify-content-center">
+        <div class="container">
+            <div class="row justify-content-center">
                 <div class="col-md-4">
-                    <p>Calle 26-A No. 4, Fraccionamiento Industrial San Juan Ixtacala, Tlalnepantla de Baz, Estado de México C.P. 54160</p>
-                    <p class="mt-2">Teléfono: 55 3629 9618</p>
-                    <p class="mt-2">Correo: cotizaciones@guardias-seguridad-cusaem.com.mx</p>
+                    <p style="font-size: 30px;text-align: center;font-weight: 700;">Contactanos</p>
+                    <p><img src="src/img/ico-bx_map.png" alt="dirección"> Calle 26-A No. 4, Fraccionamiento Industrial San Juan Ixtacala, Tlalnepantla de Baz, Estado de México C.P. 54160<br> <b>REGIÓN VI</b></p>
+                    <p class="mt-2"><img src="src/img/ico-phone.png" alt="Teléfono"> 55 3629 9618</p>
+                    <p class="mt-2"><img src="src/img/ico-ci_mail.png" alt="Mail"> cotizaciones@guardias-seguridad-cusaem.com.mx</p>
                 </div>
-                <div class="col-md-4"> 
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1880.2355298769012!2d-99.17285790160523!3d19.52137980000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f81f18da35f3%3A0xddcae191ea9c05ed!2sCUSAEM%20Cuerpo%20de%20Vigilancia%20Auxiliar%20y%20Urbana%20del%20Estado%20de%20M%C3%A9xico!5e0!3m2!1ses-419!2smx!4v1789887318573!5m2!1ses-419!2smx" width="350" height="230" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                <div class="col-md-3 text-center" data-aos="flip-right" data-aos-offset="300" data-aos-duration="500"> 
+                    <img src="src/img/logo-big.png" alt="Logo">
                 </div>
-                <div class="col-md-4">
-                    <p>Solicita una cotización mándanos un mensaje con el servicio que necesitas.</p>
-                    <p class="text-center"><a class="btn-vert" href="#">Cotización</a></p>
-                    <p>Únete a nuestro equipo, llena tu solicitud aquí.</p>
-                    <p class="text-center"><a class="btn-vert" href="#">Inscribirme</a></p>
+                <div class="col-md-4 text-center">
+                    <p>Diseñemos juntos la estrategia de seguridad que su propiedad necesita. Escríbanos ahora y obtenga un diagnóstico y presupuesto sin compromiso.</p>
+                    <p ><a class="btn-vert" type="button" data-bs-toggle="modal" data-bs-target="#mcotiza">Iniciar Cotización</a></p>
+                    <p>¿Busca estabilidad laboral y un excelente ambiente de trabajo? Únase al equipo que protege lo que más importa. Complete su registro aquí.</p>
+                    <p><a class="btn-vert" href="convocatorias.html" class="nav-link active">Inscribirme</a></p>
                 </div>
-                <hr>
-                <div class="col-12 col-md-6 text-center ltop">
-                    <p>Derechos Reservados © 2026. </p>
+            <hr>
+            <div class="col-12 col-md-6 text-center ltop">
+                <p>Derechos Reservados © 2026. </p>
 
-                </div>
-                </div>
             </div>
-        </footer>
+            </div>
+        </div>
+    </footer>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
             crossorigin="anonymous"></script>
         <script src="src/js/menu.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
     </body>
+<div class="modal fade" id="mcotiza" tabindex="-1" aria-labelledby="exampleModalLabel" style="display: none;" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable ">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel"></h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15 0C6.64286 0 0 6.64286 0 15C0 23.3571 6.64286 30 15 30C23.3571 30 30 23.3571 30 15C30 6.64286 23.3571 0 15 0ZM15 27.8571C7.92857 27.8571 2.14286 22.0714 2.14286 15C2.14286 7.92857 7.92857 2.14286 15 2.14286C22.0714 2.14286 27.8571 7.92857 27.8571 15C27.8571 22.0714 22.0714 27.8571 15 27.8571Z" fill="#D5BB4F"></path>
+                <path d="M20.7857 22.5L15 16.7143L9.21429 22.5L7.5 20.7857L13.2857 15L7.5 9.21429L9.21429 7.5L15 13.2857L20.7857 7.5L22.5 9.21429L16.7143 15L22.5 20.7857L20.7857 22.5Z" fill="#D5BB4F"></path></svg></button>
+      </div>
+      <div class="modal-body">
+        <div class="text-center">
+          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfLeun9HjNYhDifQL-DjHYfI0n0wvLaeTHWO9Ux-7vuvQdqxQ/viewform?embedded=true" width="440" height="1193" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
+        </div>
+      </div>      
+    </div>
+  </div>
+</div>
 </html>

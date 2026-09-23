@@ -1,7 +1,7 @@
 :root{
     --bf-fondo:#1E1E1E;
-    --color-texto:#F5F5F5;
-    --texto: "Rubik", sans-serif;
+    --color-texto:#E3E3E3;
+    --texto: "Inter", sans-serif;
     --texto-titulo:"Poppins", sans-serif;
     --goldBackground: linear-gradient(45deg, #ae8625, #f7ef8a, #d2ac47, #edc967);
 }
@@ -9,62 +9,19 @@ body{
     background-color: var(--bf-fondo);
     color: var(--color-texto);
     font-family: var(--texto);
-    font-weight: 300;
+    font-weight: 100;
     font-size: 20px;
 }
+b{
+  font-weight: 700;
+}
 h1{
-    font-size: 46px;
     text-transform: uppercase;
 }
 h2{font-size: 30px;}
 /* MEnu */
 
 /* Header Styling */
-.header {
-    width: 100%;
-    height: 80px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 5%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 100;
-    transition: background-color 0.4s ease, box-shadow 0.4s ease;
-}
-
-.header.scrolled, .modal-content {
-    background-color: rgba(0, 0, 0, 0.3);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    -webkit-backdrop-filter: blur(8px);
-    backdrop-filter: blur(8px);
-}
-
-.logo {
-    text-decoration: none;
-    color: #fff;
-    font-size: 2rem;
-    font-weight: 700;
-    position: relative;
-    overflow: hidden;
-    transition: color 0.4s ease;
-}
-
-.header.scrolled .logo {
-    color: var(--primary-color);
-}
-
-.logo-text {
-    display: inline-block;
-    transition: transform 0.5s ease;
-}
-
-.logo:hover .logo-text {
-    transform: translateY(-5px);
-}
-
- /* menu */
  .header {
     width: 100%;
     height: 80px;
@@ -85,7 +42,15 @@ h2{font-size: 30px;}
     -webkit-backdrop-filter: blur(8px);
     backdrop-filter: blur(8px);
 }
-
+.modal-content{
+  border: 2px solid #D5BB4F
+}
+.modal-header{
+  border-bottom:0px
+}
+#mconvo.modal, #mcotiza.modal {
+    --bs-modal-bg: #1c1b1b;
+}
 .logo {
     text-decoration: none;
     color: #fff;
@@ -119,7 +84,7 @@ h2{font-size: 30px;}
 
 .nav-link {
     font-size: 20px;
-    font-weight: 300;
+    font-weight: 700;
     color: #f5f5f5;
     font-family: var(--texto);
     text-decoration: none;
@@ -695,7 +660,7 @@ h2{font-size: 30px;}
 
 /* boton dorado */
 .custom-btn {
-  width: 230px;
+  width: 270px;
   height: 50px;
   color: #fff;
   border-radius: 5px;
@@ -727,7 +692,7 @@ h2{font-size: 30px;}
   display: inline-block;
   white-space: nowrap;
   border-radius: 5px;
-  background: linear-gradient(180deg,#f7ef8a 0%,#dc8 39%,#ae8625 61%,#dc8 100%); /* Estado inicial */
+  background: linear-gradient(180deg,#1e1e1e 0%,#1e1e1e 39%,#ae8625 61%,#dc8 100%); /* Estado inicial */
   z-index: 1; /* Crea un contexto de apilamiento */
 }
 
@@ -738,7 +703,7 @@ h2{font-size: 30px;}
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(180deg,#dc8 0%,#ae8625 39%,#dc8 61%,#f7ef8a 100%); /* Estado Hover */
+  background-image: linear-gradient(180deg,#dc8 0%,#ae8625 39%,#1e1e1e 61%,#1e1e1e 100%); /* Estado Hover */
   opacity: 0;
   transition: opacity 1s ease; /* Ajustado al tiempo del botón */
   z-index: -1; /* Se queda detrás del texto, pero visible porque el botón ahora maneja capas correctamente */
@@ -885,7 +850,7 @@ h2{font-size: 30px;}
     position: relative;
     
     /* 1. Capa negra al 60% + imagen de fondo */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url('../img/banner-convo-seguridad.webp');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../img/banner-convo-seguridad.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -978,6 +943,9 @@ h2{font-size: 30px;}
 }
 footer{
     font-size: 16px;
+    background-color: #000;
+    padding-top: 30px;
+    
 }
 
 .img-fluid {
@@ -1009,9 +977,10 @@ footer{
     align-items: center;
 }
 
+
 /* Opcional: asegurar que el h1 sea blanco si la capa es oscura */
-.hero-nosotros h1 {
-    font-size: 78px;
+.hero-nosotros h1, .hero-convocatoria h1, .hero-servicios h1 {
+    font-size: clamp(36px, 8vw, 48px);
     text-align: center;
 }
 
@@ -1034,6 +1003,20 @@ footer{
     display: flex;
     align-items: center;
 }
+
+.hero-servicios {
+    /* 1. Capa negra al 70% de transparencia (rgba con 0.7) */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../img/hero-servicios.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 400px;
+
+    /* 2. Flexbox para centrar verticalmente el contenido */
+    display: flex;
+    align-items: center;
+}
+
 
 .card{
     background-color: transparent;
@@ -1072,4 +1055,57 @@ footer{
     /* Altura mínima ajustada para dar espacio suficiente al texto */
     min-height: 337px;
     padding: 60px 0; /* Padding de seguridad para pantallas pequeñas */
+}
+
+.btn-ser {
+  background-color: #2f2f2f;
+  color: #D5BB4F;
+  font-size: 21px;
+  font-weight: 400;
+  font-family: var(--texto-titulo);
+  
+  /* Relleno arriba y abajo para que el botón tenga buena altura */
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+.btn-ser:hover{
+  background-color:#D5BB4F ;
+  color: #2f2f2f;
+}
+
+.sidebar{
+    position: sticky !important;
+    top: 85px; 
+    align-self: flex-start;
+}
+
+.parallax-container {
+    position: relative;
+    width: 100%;
+    height: 700px; /* Ajusta la altura que desees que tenga el bloque en pantalla */
+    overflow: hidden; /* Oculta el exceso de la imagen al moverse */
+    border-radius: 4px; /* Opcional: suaviza las esquinas si lo deseas */
+}
+
+.parallax-img {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 140%; /* Hacemos la imagen más alta que el contenedor para tener margen de movimiento */
+    object-fit: cover;
+    will-change: transform; /* Optimiza el rendimiento en celulares */
+    pointer-events: none;
+}
+
+.capa-negra {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Negro al 70% de opacidad */
+    pointer-events: none;
+    z-index: 1;
 }
